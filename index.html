@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title> Formulaire Sondage</title>
+
+</head>
+<body>
+ <form  name="Sondage" method="post" action="page.html">
+ <fieldset class="Sondage">
+ <legend >Sondage</legend>
+ <table>
+ <tr>
+ <td> Nom,Prenom </td>
+  <td><input type="text" name="nomprenom" size="50" maxlength="40"/></td>
+  </tr>
+  <tr>
+  <td >Code permanent</td>
+  <td><input type="password" name="code perment" size="30" maxlength="20"/></td>
+  </tr>
+  <tr>
+ <td >sexe</td>
+ <td>
+     <input type="radio" name="sexe" value="h" checked />Homme
+      <input type="radio" name="sexe" value="f" /> Femme
+   </td>
+ </tr>
+  <tr>
+  <td> Choix de cours</td>
+  <td>IFT 1945<input type="checkbox" name="Choix de cours" value="IFT 1945"/>
+       IFT 2830 <input type="checkbox" name="Choix de cours" value="IFT 2830"/>
+       IFT 1133 <inpupt type="checkbox" name="Choix de cours" value="IFT 1133"/>
+  </td>
+  </tr>
+  <tr>
+  <td>Jours de disponibilité</td>
+  <td><select name="disponibilité" multiple size="2"> 
+    <option selected="selected">Lundi</option>
+    <option >Mardi</option>
+    <option>Mercredi</option>
+    <option>Jeudi</option>
+    <option>Vendredi</option>
+    </select>
+</td>
+  </tr>
+  <tr>
+  <td>Carte de crédit</td>
+  <td><select name="carte credit" size="1">
+    <option>visa</option>
+    <option>Master card</option>
+    </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Commentaires</td>
+  <td><textarea name="Commentaires" cols="60" row="3" placeholder="Entrez vos commentaires ici"></textarea>
+  </td>
+  </tr>
+  <tr>
+  <td>Courriel</td>
+  <td><input type="text" name="Courriel" />
+  </td></tr>
+  <tr>
+  <td>Telephone</td>
+  <td><input type="text" name="Phone">
+  
+  </td>
+  </tr>
+  <tr>
+    <td></td>
+  <td><input type="reset" name="Reset" value="Reinitialiser"/>
+    <inpupt type="submit" name="submit" value="Envoyer"/>
+    </td>
+    </tr>
+  </table>
+  </fieldset>
+  </form>
+  </body>
+  </html>
+ 
